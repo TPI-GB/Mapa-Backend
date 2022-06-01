@@ -21,10 +21,10 @@ let categoryController = new CategoryController();
 let featureController = new FeatureController();
 let commentController = new CommentController();
 
-app.use("/users", userController.router);
-app.use("/places", placeController.router);
-app.use("/categories", categoryController.router);
-app.use("/features", featureController.router);
-app.use("/comment", commentController.router);
-app.use("/images", express.static("images"));
+app.use("/", userController.router);
+app.use("/", placeController.router);
+app.use("/", categoryController.router);
+app.use("/", featureController.router);
+app.use("/", commentController.router);
+app.use("/", express.static("images"));
 module.exports = app;
