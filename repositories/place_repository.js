@@ -131,7 +131,7 @@ class PlaceRepository {
     if (name !== "all") {
       nameFilter = { name: { $regex: name } };
     }
-    if (category !== "all") {
+    if (category !== "all" || category !== "Todas") {
       categoryFliter = { category: category };
     }
     if (!features.includes("all")) {
